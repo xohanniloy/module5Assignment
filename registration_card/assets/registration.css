@@ -1,0 +1,132 @@
+/* Body & Wrapper Styles */
+body {
+    margin: 100px 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #5b247a, #1bcedf);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  
+  /* Registration Card Styles */
+  .registration-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .registration-card {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    width: 600px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .registration-card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    width: 30%;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"] {
+    width: 65%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    outline: none;
+  }
+  
+  .gender-options {
+    width: 70%;
+  }
+  
+  .gender-options input {
+    margin-right: 5px;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  button {
+    width: 48%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cancel-btn {
+    background: #ff4b4b;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background: #e04343;
+    transform: scale(1.05);
+  }
+  
+  .submit-btn {
+    background: #1bcedf;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background: #16adc5;
+    transform: scale(1.05);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
